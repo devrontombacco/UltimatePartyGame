@@ -10,10 +10,27 @@ import UIKit
 
 class SplashScreenVC: UIViewController {
 
+    @IBOutlet weak var appTitleLabel: UILabel!
+    
+    @IBOutlet weak var responsibleDrinkLabel: UILabel!
+    
+
+    @IBOutlet weak var warningButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
+        warningButton.layer.cornerRadius = 10
+        
     }
-
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    @IBAction func responsiblyButton(_ sender: UIButton) {
+    }
+    
+    
 }
 
