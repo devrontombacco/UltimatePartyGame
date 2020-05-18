@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SplashScreenVC" customModule="UltimatePartyGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usg-YG-6Dh">
-                                <rect key="frame" x="139" y="691" width="136" height="31"/>
+                                <rect key="frame" x="139" y="779" width="136" height="31"/>
                                 <color key="backgroundColor" red="0.95686274509803915" green="0.062745098039215685" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="14"/>
                                 <state key="normal" title="RESPONSIBLY">
@@ -24,10 +24,11 @@
                                 </state>
                                 <connections>
                                     <action selector="responsiblyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qXn-MB-mbr"/>
+                                    <segue destination="BhI-IM-uq5" kind="show" identifier="showCreatePlayerVC" id="xxg-tt-rbQ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ultimate Party Game" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUj-hP-NgX">
-                                <rect key="frame" x="78" y="276" width="258" height="224.5"/>
+                                <rect key="frame" x="78" y="320" width="258" height="224.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="55"/>
                                 <color key="textColor" red="0.0" green="1" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -35,7 +36,7 @@
                                 <size key="shadowOffset" width="6" height="10"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I will drink" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAx-DC-E13">
-                                <rect key="frame" x="166.5" y="664.5" width="81.5" height="18.5"/>
+                                <rect key="frame" x="166.5" y="752.5" width="81.5" height="18.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="1" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -73,37 +74,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Players" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3W-7R-Wr6">
-                                <rect key="frame" x="103" y="221" width="208" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Players" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3W-7R-Wr6">
+                                <rect key="frame" x="122.5" y="186" width="169.5" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="CTP-Oa-sBc"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="26"/>
                                 <color key="textColor" red="0.0" green="1" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0rP-3k-Z1A">
-                                <rect key="frame" x="151" y="372" width="113" height="153"/>
+                                <rect key="frame" x="141" y="382" width="132" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2666666667" green="0.20784313730000001" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="plus" catalog="system">
-                                    <attributedString key="attributedTitle"/>
-                                </state>
+                                <color key="tintColor" red="0.65098039220000004" green="0.035294117649999998" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="plus" catalog="system"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQo-JD-PMY">
-                                <rect key="frame" x="116" y="769" width="182" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQo-JD-PMY">
+                                <rect key="frame" x="116" y="752" width="182" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="182" id="6pE-wu-kZk"/>
+                                    <constraint firstAttribute="height" constant="58" id="PRD-T2-91x"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
                                 <state key="normal" title="READY">
                                     <color key="titleColor" red="0.0" green="1" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addPlayerButtonAction:" destination="BhI-IM-uq5" eventType="touchUpInside" id="cnt-BP-fU1"/>
+                                    <action selector="readyButtonAction:" destination="BhI-IM-uq5" eventType="touchUpInside" id="IG6-60-Hpg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYj-sl-oGK">
+                                <rect key="frame" x="394" y="44" width="20" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="tintColor" red="0.0" green="1" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="info.circle" catalog="system"/>
+                                <connections>
+                                    <action selector="infoButtonAction:" destination="BhI-IM-uq5" eventType="touchUpInside" id="mXN-r2-8fI"/>
+                                    <segue destination="Kf8-yH-rJ2" kind="show" identifier="createPlayerToInfoVC" id="rNZ-Sj-k1c"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.2666666667" green="0.20784313730000001" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.76078431369999999" green="0.0" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="aJg-mx-za0" firstAttribute="bottom" secondItem="oQo-JD-PMY" secondAttribute="bottom" constant="52" id="7sp-HF-9xu"/>
+                            <constraint firstItem="p3W-7R-Wr6" firstAttribute="centerX" secondItem="rwh-b7-8j8" secondAttribute="centerX" id="0ff-0A-FcK"/>
+                            <constraint firstItem="pYj-sl-oGK" firstAttribute="top" secondItem="aJg-mx-za0" secondAttribute="top" id="CVm-F0-gVh"/>
+                            <constraint firstItem="pYj-sl-oGK" firstAttribute="trailing" secondItem="aJg-mx-za0" secondAttribute="trailing" id="cZv-a6-ZVL"/>
+                            <constraint firstItem="oQo-JD-PMY" firstAttribute="centerX" secondItem="rwh-b7-8j8" secondAttribute="centerX" id="msO-uK-DP7"/>
+                            <constraint firstItem="p3W-7R-Wr6" firstAttribute="top" secondItem="aJg-mx-za0" secondAttribute="top" constant="142" id="tEz-4t-ml8"/>
+                            <constraint firstItem="aJg-mx-za0" firstAttribute="bottom" secondItem="oQo-JD-PMY" secondAttribute="bottom" constant="52" id="taG-nq-fxb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aJg-mx-za0"/>
                     </view>
                     <navigationItem key="navigationItem" id="SJD-JA-gqL"/>
+                    <connections>
+                        <outlet property="addPlayerButtonOutlet" destination="0rP-3k-Z1A" id="ZFW-lI-cql"/>
+                        <outlet property="addPlayerLabel" destination="p3W-7R-Wr6" id="qOK-yb-2BR"/>
+                        <outlet property="infoButtonOutlet" destination="pYj-sl-oGK" id="nrb-WT-WKS"/>
+                        <outlet property="readyButtonOutlet" destination="oQo-JD-PMY" id="uYY-5j-lSD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WJX-ty-cvJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -119,6 +150,7 @@
                         <color key="backgroundColor" red="0.2666666667" green="0.20784313730000001" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="JlK-9E-p5U"/>
                     </view>
+                    <navigationItem key="navigationItem" id="rra-TU-JM4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZ1-B2-b6r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -142,14 +174,16 @@
         <!--Navigation Controller-->
         <scene sceneID="xBX-Tz-w7h">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tc6-wE-2bz" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Tc6-wE-2bz" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="9Ml-uM-6aS">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.2666666667" green="0.20784313730000001" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vco-2U-2vN">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hvT-xK-ETi"/>
                     </connections>
@@ -160,6 +194,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="info.circle" catalog="system" width="64" height="60"/>
         <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
 </document>
