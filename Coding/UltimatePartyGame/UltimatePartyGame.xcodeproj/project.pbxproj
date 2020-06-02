@@ -69,12 +69,12 @@
 				00A1F113246D8C8B0056D7EF /* SceneDelegate.swift */,
 				00A1F115246D8C8B0056D7EF /* SplashScreenVC.swift */,
 				00A1F128246D91220056D7EF /* CreatePlayerVC.swift */,
+				0087745A246D918E0022EADF /* InfoVC.swift */,
+				0087745C246D91C10022EADF /* GameVC.swift */,
 				00A1F117246D8C8B0056D7EF /* Main.storyboard */,
 				00A1F11A246D8C8C0056D7EF /* Assets.xcassets */,
 				00A1F11C246D8C8C0056D7EF /* LaunchScreen.storyboard */,
 				00A1F11F246D8C8D0056D7EF /* Info.plist */,
-				0087745A246D918E0022EADF /* InfoVC.swift */,
-				0087745C246D91C10022EADF /* GameVC.swift */,
 			);
 			path = UltimatePartyGame;
 			sourceTree = "<group>";
