@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tc6-wE-2bz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ofj-Te-fuR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SplashScreenVC" customModule="UltimatePartyGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usg-YG-6Dh">
-                                <rect key="frame" x="139" y="779" width="136" height="31"/>
+                                <rect key="frame" x="139" y="691" width="136" height="31"/>
                                 <color key="backgroundColor" red="0.95686274509803915" green="0.062745098039215685" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="14"/>
                                 <state key="normal" title="RESPONSIBLY">
@@ -28,7 +28,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ultimate Party Game" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUj-hP-NgX">
-                                <rect key="frame" x="78" y="320" width="258" height="224.5"/>
+                                <rect key="frame" x="78" y="276" width="258" height="224.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="55"/>
                                 <color key="textColor" red="0.0" green="1" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -36,7 +36,7 @@
                                 <size key="shadowOffset" width="6" height="10"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I will drink" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAx-DC-E13">
-                                <rect key="frame" x="166.5" y="752.5" width="81.5" height="18.5"/>
+                                <rect key="frame" x="166.5" y="664.5" width="81.5" height="18.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="1" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -64,18 +64,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="102.45535714285714"/>
+            <point key="canvasLocation" x="1957.9710144927537" y="102.45535714285714"/>
         </scene>
         <!--Create PlayerVC-->
         <scene sceneID="BJ6-wb-nZE">
             <objects>
                 <viewController id="BhI-IM-uq5" customClass="CreatePlayerVC" customModule="UltimatePartyGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rwh-b7-8j8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Players" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3W-7R-Wr6">
-                                <rect key="frame" x="122.5" y="186" width="169.5" height="63"/>
+                                <rect key="frame" x="122.5" y="142" width="169.5" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="CTP-Oa-sBc"/>
                                 </constraints>
@@ -91,7 +91,7 @@
                                 <state key="normal" image="plus" catalog="system"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQo-JD-PMY">
-                                <rect key="frame" x="116" y="752" width="182" height="58"/>
+                                <rect key="frame" x="116" y="664" width="182" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="182" id="6pE-wu-kZk"/>
                                     <constraint firstAttribute="height" constant="58" id="PRD-T2-91x"/>
@@ -107,7 +107,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYj-sl-oGK">
-                                <rect key="frame" x="394" y="44" width="20" height="27"/>
+                                <rect key="frame" x="394" y="0.0" width="20" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="tintColor" red="0.0" green="1" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="info.circle" catalog="system"/>
@@ -139,69 +139,64 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WJX-ty-cvJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1855.072463768116" y="101.78571428571428"/>
+            <point key="canvasLocation" x="2765.217391304348" y="101.78571428571428"/>
         </scene>
         <!--InfoVC-->
         <scene sceneID="hOq-sT-R4c">
             <objects>
                 <viewController id="Kf8-yH-rJ2" customClass="InfoVC" customModule="UltimatePartyGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gJO-2x-cUw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="67M-rW-APU">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1s5-T3-Maf">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How To Play" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7d-hm-jS6">
-                                                <rect key="frame" x="64.5" y="140" width="285.5" height="55"/>
+                                                <rect key="frame" x="64.5" y="100" width="285.5" height="55"/>
                                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="42"/>
                                                 <color key="textColor" red="0.95191818480000001" green="0.0327116847" blue="0.18258905410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When it is your turn click on GO button. You must perform action" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2f-uX-L0h">
-                                                <rect key="frame" x="8" y="295" width="398" height="52"/>
+                                                <rect key="frame" x="8" y="255" width="398" height="52"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                 <color key="textColor" red="0.95191818480000001" green="0.0327116847" blue="0.18258905410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRINK: Take two sips of your drink" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfX-8y-bcp">
-                                                <rect key="frame" x="8" y="417" width="398" height="26"/>
+                                                <rect key="frame" x="8" y="377" width="398" height="26"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                 <color key="textColor" red="0.95191818480000001" green="0.0327116847" blue="0.18258905410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRUTH: Player to your left asks you a question. You must answer honestly." textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCg-k4-hC1">
-                                                <rect key="frame" x="8" y="513" width="398" height="52"/>
+                                                <rect key="frame" x="8" y="473" width="398" height="52"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                 <color key="textColor" red="0.95191818480000001" green="0.0327116847" blue="0.18258905410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DARE: Player to your right will dare you to do something. If you don't complete the task take two sips of your drink." textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Wm-yr-Mmx">
-                                                <rect key="frame" x="8" y="635" width="398" height="78"/>
+                                                <rect key="frame" x="8" y="595" width="398" height="78"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                 <color key="textColor" red="0.95191818480000001" green="0.0327116847" blue="0.18258905410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOMINATE: You must nominate another player to drink their drink." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q41-lB-BaT">
-                                                <rect key="frame" x="8" y="783" width="398" height="52"/>
+                                                <rect key="frame" x="8" y="743" width="398" height="52"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                 <color key="textColor" red="0.95191818480000001" green="0.0327116847" blue="0.18258905410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="BAD JOKE CHALLENGE: Tell a really bad joke. Every player who laughs, including you, must take two sips of their drink." textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ns-kQ-LX3">
-                                                <rect key="frame" x="8" y="905" width="398" height="78"/>
+                                                <rect key="frame" x="8" y="865" width="398" height="78"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                 <color key="textColor" red="0.95191818480000001" green="0.0327116847" blue="0.18258905410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a39-GB-onI">
-                                                <rect key="frame" x="20" y="20" width="12.5" height="22"/>
-                                                <color key="tintColor" red="0.0" green="1" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" image="chevron.left" catalog="system"/>
-                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.2666666667" green="0.20784313730000001" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -220,16 +215,14 @@
                                             <constraint firstAttribute="height" constant="1100" id="MRZ-es-qFy"/>
                                             <constraint firstItem="2Ns-kQ-LX3" firstAttribute="top" secondItem="q41-lB-BaT" secondAttribute="bottom" constant="70" id="Scf-KX-wT0"/>
                                             <constraint firstItem="4Wm-yr-Mmx" firstAttribute="top" secondItem="pCg-k4-hC1" secondAttribute="bottom" constant="70" id="Tya-od-hr9"/>
-                                            <constraint firstItem="a39-GB-onI" firstAttribute="leading" secondItem="1s5-T3-Maf" secondAttribute="leading" constant="20" id="WfD-4C-o3d"/>
                                             <constraint firstItem="q41-lB-BaT" firstAttribute="centerX" secondItem="1s5-T3-Maf" secondAttribute="centerX" id="Wsq-f9-2C7"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="pCg-k4-hC1" secondAttribute="trailing" id="WwG-Bu-pIt"/>
                                             <constraint firstItem="pCg-k4-hC1" firstAttribute="centerX" secondItem="1s5-T3-Maf" secondAttribute="centerX" id="Wzr-na-aUi"/>
                                             <constraint firstItem="jfX-8y-bcp" firstAttribute="centerX" secondItem="1s5-T3-Maf" secondAttribute="centerX" id="Xdq-sV-9gN"/>
-                                            <constraint firstItem="X7d-hm-jS6" firstAttribute="top" secondItem="1s5-T3-Maf" secondAttribute="top" constant="140" id="eHn-ZA-IEs"/>
+                                            <constraint firstItem="X7d-hm-jS6" firstAttribute="top" secondItem="1s5-T3-Maf" secondAttribute="top" constant="100" id="eHn-ZA-IEs"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="4Wm-yr-Mmx" secondAttribute="trailing" id="g6r-1c-fIf"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="2Ns-kQ-LX3" secondAttribute="trailing" id="gUC-1m-nEN"/>
                                             <constraint firstItem="2Ns-kQ-LX3" firstAttribute="leading" secondItem="1s5-T3-Maf" secondAttribute="leadingMargin" id="iEq-WS-fy2"/>
-                                            <constraint firstItem="a39-GB-onI" firstAttribute="top" secondItem="1s5-T3-Maf" secondAttribute="top" constant="20" id="l4B-PV-tnH"/>
                                             <constraint firstItem="4Wm-yr-Mmx" firstAttribute="leading" secondItem="1s5-T3-Maf" secondAttribute="leadingMargin" id="lko-uz-r99"/>
                                             <constraint firstItem="2Ns-kQ-LX3" firstAttribute="centerX" secondItem="1s5-T3-Maf" secondAttribute="centerX" id="v1H-9K-7jz"/>
                                             <constraint firstItem="G2f-uX-L0h" firstAttribute="top" secondItem="X7d-hm-jS6" secondAttribute="bottom" constant="100" id="wB0-Az-6QI"/>
@@ -256,18 +249,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JlK-9E-p5U"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rra-TU-JM4"/>
+                    <navigationItem key="navigationItem" id="rra-TU-JM4">
+                        <barButtonItem key="backBarButtonItem" title="     " id="UdF-4b-eBb"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZ1-B2-b6r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3158" y="598"/>
+            <point key="canvasLocation" x="4068.115942028986" y="597.99107142857144"/>
         </scene>
         <!--GameVC-->
         <scene sceneID="YR5-qH-2pW">
             <objects>
                 <viewController id="DxV-g0-CVo" customClass="GameVC" customModule="UltimatePartyGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cfv-Ta-gsK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.2666666667" green="0.20784313730000001" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Ebt-5H-yW0"/>
@@ -279,29 +274,27 @@
             <point key="canvasLocation" x="1855" y="885"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="xBX-Tz-w7h">
+        <scene sceneID="P6P-4c-OPF">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Tc6-wE-2bz" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ofj-Te-fuR" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="9Ml-uM-6aS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="W61-w0-ZJc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="1" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.2666666667" green="0.20784313730000001" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vco-2U-2vN">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hvT-xK-ETi"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bTv-kT-jeO"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="j7X-ae-IZ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FmU-Kr-UhK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="102.45535714285714"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="102.45535714285714"/>
         </scene>
     </scenes>
     <resources>
-        <image name="chevron.left" catalog="system" width="48" height="64"/>
         <image name="info.circle" catalog="system" width="64" height="60"/>
         <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
