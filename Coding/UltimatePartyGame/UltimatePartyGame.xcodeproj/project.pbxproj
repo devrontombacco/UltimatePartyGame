@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002B7BA8249501F0001C59A3 /* playerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002B7BA7249501F0001C59A3 /* playerTableView.swift */; };
 		0087745B246D918E0022EADF /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0087745A246D918E0022EADF /* InfoVC.swift */; };
 		0087745D246D91C10022EADF /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0087745C246D91C10022EADF /* GameVC.swift */; };
 		00A1F112246D8C8B0056D7EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1F111246D8C8B0056D7EF /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		002B7BA7249501F0001C59A3 /* playerTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playerTableView.swift; sourceTree = "<group>"; };
 		0087745A246D918E0022EADF /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
 		0087745C246D91C10022EADF /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		00A1F10E246D8C8B0056D7EF /* UltimatePartyGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimatePartyGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +77,7 @@
 				00A1F11A246D8C8C0056D7EF /* Assets.xcassets */,
 				00A1F11C246D8C8C0056D7EF /* LaunchScreen.storyboard */,
 				00A1F11F246D8C8D0056D7EF /* Info.plist */,
+				002B7BA7249501F0001C59A3 /* playerTableView.swift */,
 			);
 			path = UltimatePartyGame;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				00A1F129246D91220056D7EF /* CreatePlayerVC.swift in Sources */,
 				00A1F112246D8C8B0056D7EF /* AppDelegate.swift in Sources */,
 				00A1F114246D8C8B0056D7EF /* SceneDelegate.swift in Sources */,
+				002B7BA8249501F0001C59A3 /* playerTableView.swift in Sources */,
 				0087745D246D91C10022EADF /* GameVC.swift in Sources */,
 				0087745B246D918E0022EADF /* InfoVC.swift in Sources */,
 			);

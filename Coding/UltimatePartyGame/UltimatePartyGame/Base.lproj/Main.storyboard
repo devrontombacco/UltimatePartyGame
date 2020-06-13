@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ofj-Te-fuR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SplashScreenVC" customModule="UltimatePartyGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usg-YG-6Dh">
-                                <rect key="frame" x="139" y="691" width="136" height="31"/>
+                                <rect key="frame" x="139" y="779" width="136" height="31"/>
                                 <color key="backgroundColor" red="0.95686274509803915" green="0.062745098039215685" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="14"/>
                                 <state key="normal" title="RESPONSIBLY">
@@ -24,11 +24,11 @@
                                 </state>
                                 <connections>
                                     <action selector="responsiblyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qXn-MB-mbr"/>
-                                    <segue destination="BhI-IM-uq5" kind="show" identifier="showCreatePlayerVC" id="xxg-tt-rbQ"/>
+                                    <segue destination="iDg-8r-jch" kind="presentation" modalPresentationStyle="fullScreen" id="sAt-WO-pDm"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ultimate Party Game" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUj-hP-NgX">
-                                <rect key="frame" x="78" y="276" width="258" height="224.5"/>
+                                <rect key="frame" x="78" y="320" width="258" height="224.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="55"/>
                                 <color key="textColor" red="0.0" green="1" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -36,7 +36,7 @@
                                 <size key="shadowOffset" width="6" height="10"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I will drink" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IAx-DC-E13">
-                                <rect key="frame" x="166.5" y="664.5" width="81.5" height="18.5"/>
+                                <rect key="frame" x="166.5" y="752.5" width="81.5" height="18.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="1" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -64,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1957.9710144927537" y="102.45535714285714"/>
+            <point key="canvasLocation" x="2777" y="102"/>
         </scene>
         <!--Create PlayerVC-->
         <scene sceneID="BJ6-wb-nZE">
@@ -75,7 +75,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Players" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3W-7R-Wr6">
-                                <rect key="frame" x="122.5" y="142" width="169.5" height="63"/>
+                                <rect key="frame" x="120" y="142" width="174" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="CTP-Oa-sBc"/>
                                 </constraints>
@@ -83,13 +83,6 @@
                                 <color key="textColor" red="0.0" green="1" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0rP-3k-Z1A">
-                                <rect key="frame" x="141" y="382" width="132" height="132"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.2666666667" green="0.20784313730000001" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="0.65098039220000004" green="0.035294117649999998" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="plus" catalog="system"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQo-JD-PMY">
                                 <rect key="frame" x="116" y="664" width="182" height="58"/>
                                 <constraints>
@@ -101,45 +94,83 @@
                                     <color key="titleColor" red="0.0" green="1" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="addPlayerButtonAction:" destination="BhI-IM-uq5" eventType="touchUpInside" id="cnt-BP-fU1"/>
-                                    <action selector="readyButtonAction:" destination="BhI-IM-uq5" eventType="touchUpInside" id="IG6-60-Hpg"/>
+                                    <action selector="readyButtonPressed:" destination="BhI-IM-uq5" eventType="touchUpInside" id="IG6-60-Hpg"/>
                                     <segue destination="DxV-g0-CVo" kind="show" identifier="createPlayerToGameVC" id="tJw-CO-31S"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYj-sl-oGK">
-                                <rect key="frame" x="394" y="0.0" width="20" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g3Y-Nq-5RV">
+                                <rect key="frame" x="120" y="224" width="174" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" textContentType="name"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POv-sB-q1P">
+                                <rect key="frame" x="330" y="227" width="44" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="tintColor" red="0.0" green="1" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="info.circle" catalog="system"/>
+                                <state key="normal" image="person.crop.circle.fill.badge.plus" catalog="system"/>
                                 <connections>
-                                    <action selector="infoButtonAction:" destination="BhI-IM-uq5" eventType="touchUpInside" id="mXN-r2-8fI"/>
-                                    <segue destination="Kf8-yH-rJ2" kind="show" identifier="createPlayerToInfoVC" id="rNZ-Sj-k1c"/>
+                                    <action selector="addPlayerButtonPressed:" destination="BhI-IM-uq5" eventType="touchUpInside" id="QfH-Rw-GaX"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o9V-58-FNb" customClass="playerTableView" customModule="UltimatePartyGame" customModuleProvider="target">
+                                <rect key="frame" x="30" y="298" width="354" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="eEg-CL-eZ9"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="playerTableViewCell" id="KAU-c3-jzo">
+                                        <rect key="frame" x="0.0" y="28" width="354" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KAU-c3-jzo" id="mGe-xA-cQQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="354" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.2666666667" green="0.20784313730000001" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.76078431369999999" green="0.0" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="p3W-7R-Wr6" firstAttribute="centerX" secondItem="rwh-b7-8j8" secondAttribute="centerX" id="0ff-0A-FcK"/>
-                            <constraint firstItem="pYj-sl-oGK" firstAttribute="top" secondItem="aJg-mx-za0" secondAttribute="top" id="CVm-F0-gVh"/>
-                            <constraint firstItem="pYj-sl-oGK" firstAttribute="trailing" secondItem="aJg-mx-za0" secondAttribute="trailing" id="cZv-a6-ZVL"/>
-                            <constraint firstItem="oQo-JD-PMY" firstAttribute="centerX" secondItem="rwh-b7-8j8" secondAttribute="centerX" id="msO-uK-DP7"/>
+                            <constraint firstItem="o9V-58-FNb" firstAttribute="top" secondItem="g3Y-Nq-5RV" secondAttribute="bottom" constant="40" id="3zT-YN-ZQd"/>
+                            <constraint firstItem="oQo-JD-PMY" firstAttribute="centerX" secondItem="rwh-b7-8j8" secondAttribute="centerX" id="7Na-h0-RNV"/>
+                            <constraint firstItem="POv-sB-q1P" firstAttribute="top" secondItem="aJg-mx-za0" secondAttribute="top" constant="227" id="Esx-na-TGt"/>
+                            <constraint firstItem="o9V-58-FNb" firstAttribute="centerX" secondItem="rwh-b7-8j8" secondAttribute="centerX" id="OVY-gD-Jzh"/>
+                            <constraint firstItem="g3Y-Nq-5RV" firstAttribute="centerX" secondItem="p3W-7R-Wr6" secondAttribute="centerX" id="a2s-em-sHw"/>
+                            <constraint firstItem="o9V-58-FNb" firstAttribute="leading" secondItem="aJg-mx-za0" secondAttribute="leading" constant="30" id="auK-nW-Ysx"/>
+                            <constraint firstItem="aJg-mx-za0" firstAttribute="trailing" secondItem="o9V-58-FNb" secondAttribute="trailing" constant="30" id="cPQ-Nk-im6"/>
+                            <constraint firstItem="g3Y-Nq-5RV" firstAttribute="leading" secondItem="p3W-7R-Wr6" secondAttribute="leading" id="iT3-2i-E5e"/>
+                            <constraint firstItem="g3Y-Nq-5RV" firstAttribute="trailing" secondItem="p3W-7R-Wr6" secondAttribute="trailing" id="l22-pR-Hm8"/>
+                            <constraint firstItem="POv-sB-q1P" firstAttribute="leading" secondItem="g3Y-Nq-5RV" secondAttribute="trailing" constant="36" id="oRW-P2-9Ug"/>
                             <constraint firstItem="p3W-7R-Wr6" firstAttribute="top" secondItem="aJg-mx-za0" secondAttribute="top" constant="142" id="tEz-4t-ml8"/>
                             <constraint firstItem="aJg-mx-za0" firstAttribute="bottom" secondItem="oQo-JD-PMY" secondAttribute="bottom" constant="52" id="taG-nq-fxb"/>
+                            <constraint firstItem="g3Y-Nq-5RV" firstAttribute="centerY" secondItem="POv-sB-q1P" secondAttribute="centerY" id="ua3-k6-zpy"/>
+                            <constraint firstItem="g3Y-Nq-5RV" firstAttribute="leading" secondItem="aJg-mx-za0" secondAttribute="leading" constant="120" id="vqr-Ps-vAK"/>
+                            <constraint firstItem="aJg-mx-za0" firstAttribute="trailing" secondItem="POv-sB-q1P" secondAttribute="trailing" constant="40" id="z2u-NV-HtI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aJg-mx-za0"/>
                     </view>
-                    <navigationItem key="navigationItem" id="SJD-JA-gqL"/>
+                    <navigationItem key="navigationItem" id="ft9-5j-Ayt">
+                        <barButtonItem key="backBarButtonItem" title="  " id="s6B-p8-40e"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle" catalog="system" id="1hn-Jc-mD9">
+                            <connections>
+                                <segue destination="Kf8-yH-rJ2" kind="show" id="Ljc-0J-a5S"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="addPlayerButtonOutlet" destination="0rP-3k-Z1A" id="ZFW-lI-cql"/>
+                        <outlet property="addPlayerButton" destination="POv-sB-q1P" id="w8y-B8-BcJ"/>
                         <outlet property="addPlayerLabel" destination="p3W-7R-Wr6" id="qOK-yb-2BR"/>
-                        <outlet property="infoButtonOutlet" destination="pYj-sl-oGK" id="nrb-WT-WKS"/>
+                        <outlet property="playerNameInput" destination="g3Y-Nq-5RV" id="O2C-ZI-ofa"/>
+                        <outlet property="playerTableView" destination="o9V-58-FNb" id="oJf-ls-fps"/>
                         <outlet property="readyButtonOutlet" destination="oQo-JD-PMY" id="uYY-5j-lSD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WJX-ty-cvJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2765.217391304348" y="101.78571428571428"/>
+            <point key="canvasLocation" x="4931.884057971015" y="101.78571428571428"/>
         </scene>
         <!--InfoVC-->
         <scene sceneID="hOq-sT-R4c">
@@ -249,13 +280,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JlK-9E-p5U"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rra-TU-JM4">
-                        <barButtonItem key="backBarButtonItem" title="     " id="UdF-4b-eBb"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="rra-TU-JM4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZ1-B2-b6r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4068.115942028986" y="597.99107142857144"/>
+            <point key="canvasLocation" x="5888.4057971014499" y="597.99107142857144"/>
         </scene>
         <!--GameVC-->
         <scene sceneID="YR5-qH-2pW">
@@ -271,14 +300,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j5b-aM-zaj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1855" y="885"/>
+            <point key="canvasLocation" x="4932" y="850"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="P6P-4c-OPF">
+        <scene sceneID="LVT-dP-RUi">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ofj-Te-fuR" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iDg-8r-jch" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="W61-w0-ZJc">
+                    <navigationItem key="navigationItem" id="bjy-2e-D4f"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="BDk-en-In5">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.0" green="1" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -286,16 +316,16 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bTv-kT-jeO"/>
+                        <segue destination="BhI-IM-uq5" kind="relationship" relationship="rootViewController" id="tsg-0L-0nB"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FmU-Kr-UhK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hPA-wT-xH2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="102.45535714285714"/>
+            <point key="canvasLocation" x="4021.739130434783" y="101.78571428571428"/>
         </scene>
     </scenes>
     <resources>
         <image name="info.circle" catalog="system" width="64" height="60"/>
-        <image name="plus" catalog="system" width="64" height="56"/>
+        <image name="person.crop.circle.fill.badge.plus" catalog="system" width="64" height="50"/>
     </resources>
 </document>
