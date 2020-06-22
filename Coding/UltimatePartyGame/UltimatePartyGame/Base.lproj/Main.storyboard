@@ -95,7 +95,7 @@
                                 </state>
                                 <connections>
                                     <action selector="readyButtonPressed:" destination="BhI-IM-uq5" eventType="touchUpInside" id="IG6-60-Hpg"/>
-                                    <segue destination="DxV-g0-CVo" kind="show" identifier="createPlayerToGameVC" id="tJw-CO-31S"/>
+                                    <segue destination="DxV-g0-CVo" kind="show" id="PMN-Bq-zfp"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g3Y-Nq-5RV">
@@ -165,7 +165,7 @@
                         <outlet property="addPlayerLabel" destination="p3W-7R-Wr6" id="qOK-yb-2BR"/>
                         <outlet property="playerNameInput" destination="g3Y-Nq-5RV" id="O2C-ZI-ofa"/>
                         <outlet property="playerTableView" destination="o9V-58-FNb" id="oJf-ls-fps"/>
-                        <outlet property="readyButtonOutlet" destination="oQo-JD-PMY" id="uYY-5j-lSD"/>
+                        <outlet property="readyButtonOutlet" destination="oQo-JD-PMY" id="k71-Tg-YfT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WJX-ty-cvJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -293,10 +293,87 @@
                     <view key="view" contentMode="scaleToFill" id="Cfv-Ta-gsK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9x-I7-f9H">
+                                <rect key="frame" x="162" y="142" width="90" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="1Gw-E5-Vnk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="1" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6p-HE-WjB">
+                                <rect key="frame" x="57" y="254" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="ByQ-J3-UH3"/>
+                                    <constraint firstAttribute="width" constant="300" id="RL0-0U-JO6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5SD-bB-ldN">
+                                <rect key="frame" x="150" y="681" width="114" height="41"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                <state key="normal" title="COMPLETE">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="completeButtonPressed:" destination="DxV-g0-CVo" eventType="touchUpInside" id="59k-QK-9tS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ria-3c-srk">
+                                <rect key="frame" x="30" y="681" width="39" height="41"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                <state key="normal" title="GO">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goButtonPressed:" destination="DxV-g0-CVo" eventType="touchUpInside" id="jfZ-tQ-0ll"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNs-wo-FCE">
+                                <rect key="frame" x="327" y="681" width="55" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="zNJ-cu-Qsn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
+                                <state key="normal" title="STOP">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="goButtonPressed:" destination="DxV-g0-CVo" eventType="touchUpInside" id="Wje-8G-ccB"/>
+                                    <action selector="stopButton:" destination="DxV-g0-CVo" eventType="touchUpInside" id="6LY-ph-jI7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.2666666667" green="0.20784313730000001" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="W9x-I7-f9H" firstAttribute="top" secondItem="Ebt-5H-yW0" secondAttribute="top" constant="142" id="1D0-tU-FHH"/>
+                            <constraint firstItem="Ebt-5H-yW0" firstAttribute="bottom" secondItem="YNs-wo-FCE" secondAttribute="bottom" constant="52" id="BPC-BR-gLB"/>
+                            <constraint firstItem="ria-3c-srk" firstAttribute="leading" secondItem="Ebt-5H-yW0" secondAttribute="leading" constant="30" id="LZG-8L-SVr"/>
+                            <constraint firstItem="Ebt-5H-yW0" firstAttribute="bottom" secondItem="5SD-bB-ldN" secondAttribute="bottom" constant="52" id="RF6-vr-SWA"/>
+                            <constraint firstItem="Ebt-5H-yW0" firstAttribute="bottom" secondItem="ria-3c-srk" secondAttribute="bottom" constant="52" id="UCC-X0-Lg4"/>
+                            <constraint firstItem="W9x-I7-f9H" firstAttribute="leading" secondItem="Ebt-5H-yW0" secondAttribute="leading" constant="162" id="mjk-s4-0PE"/>
+                            <constraint firstItem="W9x-I7-f9H" firstAttribute="centerX" secondItem="Cfv-Ta-gsK" secondAttribute="centerX" id="q0y-gL-Vhi"/>
+                            <constraint firstItem="Ebt-5H-yW0" firstAttribute="trailing" secondItem="YNs-wo-FCE" secondAttribute="trailing" constant="32" id="qeb-m1-7tG"/>
+                            <constraint firstItem="t6p-HE-WjB" firstAttribute="centerY" secondItem="Cfv-Ta-gsK" secondAttribute="centerY" id="qk1-oS-070"/>
+                            <constraint firstItem="5SD-bB-ldN" firstAttribute="centerX" secondItem="Cfv-Ta-gsK" secondAttribute="centerX" id="r8y-Qg-rdq"/>
+                            <constraint firstItem="t6p-HE-WjB" firstAttribute="centerX" secondItem="Cfv-Ta-gsK" secondAttribute="centerX" id="xGk-Rz-jZH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ebt-5H-yW0"/>
                     </view>
-                    <navigationItem key="navigationItem" id="TOJ-Ka-8LD"/>
+                    <navigationItem key="navigationItem" id="TOJ-Ka-8LD">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle" catalog="system" id="nEO-po-IfI"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="goButton" destination="ria-3c-srk" id="ZfW-gi-KBv"/>
+                        <outlet property="infoVCButton" destination="nEO-po-IfI" id="6Xf-29-Z6E"/>
+                        <outlet property="playerNameLabel" destination="W9x-I7-f9H" id="r6m-Hf-trB"/>
+                        <outlet property="stopButton" destination="YNs-wo-FCE" id="fzF-wD-lDd"/>
+                        <outlet property="taskLabel" destination="t6p-HE-WjB" id="UYa-mT-7RV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j5b-aM-zaj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

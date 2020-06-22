@@ -17,6 +17,7 @@
 		00A1F11B246D8C8C0056D7EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A1F11A246D8C8C0056D7EF /* Assets.xcassets */; };
 		00A1F11E246D8C8C0056D7EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00A1F11C246D8C8C0056D7EF /* LaunchScreen.storyboard */; };
 		00A1F129246D91220056D7EF /* CreatePlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1F128246D91220056D7EF /* CreatePlayerVC.swift */; };
+		00FD36FA2496802100A9061A /* RandomTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FD36F92496802100A9061A /* RandomTasks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		00A1F11D246D8C8C0056D7EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00A1F11F246D8C8D0056D7EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00A1F128246D91220056D7EF /* CreatePlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePlayerVC.swift; sourceTree = "<group>"; };
+		00FD36F92496802100A9061A /* RandomTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomTasks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,15 +71,10 @@
 				00A1F127246D90010056D7EF /* Controller */,
 				00A1F111246D8C8B0056D7EF /* AppDelegate.swift */,
 				00A1F113246D8C8B0056D7EF /* SceneDelegate.swift */,
-				00A1F115246D8C8B0056D7EF /* SplashScreenVC.swift */,
-				00A1F128246D91220056D7EF /* CreatePlayerVC.swift */,
-				0087745A246D918E0022EADF /* InfoVC.swift */,
-				0087745C246D91C10022EADF /* GameVC.swift */,
 				00A1F117246D8C8B0056D7EF /* Main.storyboard */,
 				00A1F11A246D8C8C0056D7EF /* Assets.xcassets */,
 				00A1F11C246D8C8C0056D7EF /* LaunchScreen.storyboard */,
 				00A1F11F246D8C8D0056D7EF /* Info.plist */,
-				002B7BA7249501F0001C59A3 /* playerTableView.swift */,
 			);
 			path = UltimatePartyGame;
 			sourceTree = "<group>";
@@ -85,6 +82,7 @@
 		00A1F125246D8FF20056D7EF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				00FD36F92496802100A9061A /* RandomTasks.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,6 +90,7 @@
 		00A1F126246D8FFC0056D7EF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				002B7BA7249501F0001C59A3 /* playerTableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,6 +98,10 @@
 		00A1F127246D90010056D7EF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				00A1F115246D8C8B0056D7EF /* SplashScreenVC.swift */,
+				00A1F128246D91220056D7EF /* CreatePlayerVC.swift */,
+				0087745A246D918E0022EADF /* InfoVC.swift */,
+				0087745C246D91C10022EADF /* GameVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				00A1F116246D8C8B0056D7EF /* SplashScreenVC.swift in Sources */,
 				00A1F129246D91220056D7EF /* CreatePlayerVC.swift in Sources */,
 				00A1F112246D8C8B0056D7EF /* AppDelegate.swift in Sources */,
+				00FD36FA2496802100A9061A /* RandomTasks.swift in Sources */,
 				00A1F114246D8C8B0056D7EF /* SceneDelegate.swift in Sources */,
 				002B7BA8249501F0001C59A3 /* playerTableView.swift in Sources */,
 				0087745D246D91C10022EADF /* GameVC.swift in Sources */,
