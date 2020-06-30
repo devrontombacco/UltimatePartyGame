@@ -10,20 +10,25 @@ import UIKit
 
 class GameVC: UIViewController {
     
+    var gamePlayers: [String] = []
+    var taskTimer: Timer?
+    let playerTask = RandomSelection()
+    var count: Int = 0
+    
     @IBOutlet weak var playerNameLabel: UILabel!
     @IBOutlet weak var infoVCButton: UIBarButtonItem!
     @IBOutlet weak var taskLabel: UILabel!
     @IBOutlet weak var goButton: UIButton!
-    @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var completeButton: UIButton!
     
-    var taskTimer: Timer?
-    
-    let playerTask = RandomSelection()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         configureUI()
+        changePlayerName()
+        completeButton.isEnabled = true
+        
     }
     
     func configureUI() {
@@ -37,9 +42,11 @@ class GameVC: UIViewController {
         taskLabel.layer.borderColor = UIColor.white.cgColor
     }
     
-
     @IBAction func goButtonPressed(_ sender: UIButton) {
+        
         startTimer()
+        goButton.isEnabled = false
+        completeButton.isEnabled = true
     }
     
     func startTimer(){
@@ -54,23 +61,24 @@ class GameVC: UIViewController {
         }
     }
     
+    func changePlayerName(){
+        
+        count += 1
+        if count == gamePlayers.count {
+           count = 0
+        }
+        playerNameLabel.text? = gamePlayers[count]
+        
+    }
+    
     @IBAction func completeButtonPressed(_ sender: UIButton) {
         
-        // Select Next Player and assign to playerName
-        // Disable Complete Button until Go is pressed
-        // Disable Stop Button until Go is pressed
+        changePlayerName()
         taskLabel.text = "Lets GO!"
-        
-    }
-    
-    @IBAction func stopButton(_ sender: UIButton) {
+        goButton.isEnabled = true
+        completeButton.isEnabled = false
 
-        taskTimer?.invalidate()
-        // disable Go button
-        // disable Stop Button
-        
     }
-    
-        
     
 }
+

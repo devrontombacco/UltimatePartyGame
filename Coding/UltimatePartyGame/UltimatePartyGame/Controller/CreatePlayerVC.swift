@@ -53,12 +53,7 @@ class CreatePlayerVC: UIViewController, UITextFieldDelegate, UITableViewDataSour
     // TEXTFIELD METHODS
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         playerNameInput.endEditing(true)
-        // return true
     }
-
-//    func textFieldDidEndEditing(_ textField: UITextField){
-//        playerNameInput.text = " "
-//    }
     
     // TABLEVIEW METHODS
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -98,8 +93,8 @@ class CreatePlayerVC: UIViewController, UITextFieldDelegate, UITableViewDataSour
         playerTableView.beginUpdates()
         playerTableView.insertRows(at: [indexPath], with: .automatic)
         playerTableView.endUpdates()
-        
         playerNameInput.text = " "
+        
     }
     
     @IBAction func addPlayerButtonPressed(_ sender: UIButton) {
@@ -109,4 +104,12 @@ class CreatePlayerVC: UIViewController, UITextFieldDelegate, UITableViewDataSour
     @IBAction func readyButtonPressed(_ sender: UIButton) {
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "toGameVC") {
+            let vc = segue.destination as! GameVC
+            vc.gamePlayers = playerNamesArray
+        }
+    }
+
 }
