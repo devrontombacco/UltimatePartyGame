@@ -33,6 +33,7 @@ class GameVC: UIViewController {
     
     func configureUI() {
         configureTaskLabel()
+        configureButtons()
     }
     
     func configureTaskLabel() {
@@ -40,6 +41,11 @@ class GameVC: UIViewController {
         taskLabel.clipsToBounds = true
         taskLabel.layer.borderWidth = 2
         taskLabel.layer.borderColor = UIColor.white.cgColor
+    }
+    
+    func configureButtons(){
+        goButton.setTitleColor(.gray, for: .disabled)
+        completeButton.setTitleColor(.gray, for: .disabled)
     }
     
     @IBAction func goButtonPressed(_ sender: UIButton) {
@@ -54,10 +60,12 @@ class GameVC: UIViewController {
     }
     
     @objc func showRandomTask() {
+        
         taskLabel.text = playerTask.taskArray.randomElement()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.taskTimer?.invalidate()
+            
         }
     }
     
