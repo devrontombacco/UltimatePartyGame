@@ -156,7 +156,7 @@
                         <barButtonItem key="backBarButtonItem" title="  " id="s6B-p8-40e"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle" catalog="system" id="1hn-Jc-mD9">
                             <connections>
-                                <segue destination="Kf8-yH-rJ2" kind="show" id="Ljc-0J-a5S"/>
+                                <segue destination="Kf8-yH-rJ2" kind="show" identifier="toInfoVC" id="Ljc-0J-a5S"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -394,6 +394,6 @@
         <image name="person.crop.circle.fill.badge.plus" catalog="system" width="64" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9M7-8f-pYq"/>
+        <segue reference="Ljc-0J-a5S"/>
     </inferredMetricsTieBreakers>
 </document>

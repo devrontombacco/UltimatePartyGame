@@ -12,6 +12,7 @@ class GameVC: UIViewController {
     
     var gamePlayers: [String] = []
     var taskTimer: Timer?
+    var enableButtonTimer: Timer?
     let playerTask = RandomSelection()
     var count: Int = 0
     
@@ -31,6 +32,8 @@ class GameVC: UIViewController {
         
     }
     
+    // MARK: CONFIGURATION METHODS
+    
     func configureUI() {
         configureTaskLabel()
         configureButtons()
@@ -48,15 +51,19 @@ class GameVC: UIViewController {
         completeButton.setTitleColor(.gray, for: .disabled)
     }
     
+    // Go button: Disables both buttons & starts the 4 sec timer
     @IBAction func goButtonPressed(_ sender: UIButton) {
         
-        startTimer()
         goButton.isEnabled = false
-        completeButton.isEnabled = true
+        startTimer()
+        reEnableCompleteButtonTimer()
+        completeButton.isEnabled = false
     }
     
     func startTimer(){
+        
         taskTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(showRandomTask), userInfo: nil, repeats: true)
+
     }
     
     @objc func showRandomTask() {
@@ -65,8 +72,26 @@ class GameVC: UIViewController {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             self.taskTimer?.invalidate()
-            
         }
+    }
+
+    func reEnableCompleteButtonTimer(){
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+            self.completeButton.isEnabled = true
+            self.enableButtonTimer?.invalidate()
+        }
+    }
+    
+    
+    // Complete button: changes player name, taskLabel and enables 2x buttons
+    @IBAction func completeButtonPressed(_ sender: UIButton) {
+        
+        changePlayerName()
+        taskLabel.text = "Lets GO!"
+        goButton.isEnabled = true
+        completeButton.isEnabled = false
+
     }
     
     func changePlayerName(){
@@ -78,15 +103,5 @@ class GameVC: UIViewController {
         playerNameLabel.text? = gamePlayers[count]
         
     }
-    
-    @IBAction func completeButtonPressed(_ sender: UIButton) {
-        
-        changePlayerName()
-        taskLabel.text = "Lets GO!"
-        goButton.isEnabled = true
-        completeButton.isEnabled = false
-
-    }
-    
 }
 

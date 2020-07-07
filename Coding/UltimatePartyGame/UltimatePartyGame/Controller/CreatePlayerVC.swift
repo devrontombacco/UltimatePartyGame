@@ -8,7 +8,8 @@
 
 import UIKit
 
-class CreatePlayerVC: UIViewController, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate {
+
+class CreatePlayerVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     // Variables
     let placeholderText = "Player name..."
@@ -34,7 +35,8 @@ class CreatePlayerVC: UIViewController, UITextFieldDelegate, UITableViewDataSour
         configureUI()
     }
     
-    // CONFIGURATION METHODS
+    // MARK: - CONFIGURATION METHODS
+    
     func configureUI() {
         configurePlayerNameInput()
         configureReadyButton()
@@ -50,12 +52,21 @@ class CreatePlayerVC: UIViewController, UITextFieldDelegate, UITableViewDataSour
         readyButtonOutlet.layer.borderWidth = 1.0
     }
     
-    // TEXTFIELD METHODS
+}
+    // MARK: UITEXTFIELD DELEGATE
+
+extension CreatePlayerVC: UITextFieldDelegate {
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         playerNameInput.endEditing(true)
     }
     
-    // TABLEVIEW METHODS
+}
+    
+    // MARK: TABLEVIEW METHODS
+    
+extension CreatePlayerVC {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         playerNamesArray.count
     }
@@ -103,13 +114,43 @@ class CreatePlayerVC: UIViewController, UITextFieldDelegate, UITableViewDataSour
     
     @IBAction func readyButtonPressed(_ sender: UIButton) {
         
+        if playerNamesArray.isEmpty {
+            noNameAlert()
+        }
+        
+        
+    }
+    
+    func noNameAlert(){
+        let alert = UIAlertController(
+            title:  "Who's playing?",
+            message: "Please insert player names",
+            preferredStyle: .alert
+        )
+        let nextQuestionAction = UIAlertAction(
+            title: "Add names now" ,
+            style: .default,
+            handler: nil
+        )
+        alert.addAction(nextQuestionAction)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        
+        if identifier == "toGameVC" {
+        return playerNamesArray.isEmpty == false
+        }
+        return true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "toGameVC") {
-            let vc = segue.destination as! GameVC
-            vc.gamePlayers = playerNamesArray
-        }
+       
+            if (segue.identifier == "toGameVC") {
+                let vc = segue.destination as! GameVC
+                vc.gamePlayers = playerNamesArray
+            }
+        
     }
 
 }
