@@ -22,7 +22,6 @@ class CreatePlayerVC: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var playerTableView: UITableView!
     @IBOutlet weak var addPlayerButton: UIButton!
     @IBOutlet weak var readyButtonOutlet: UIButton!
-
     
     
     override func viewDidLoad() {
@@ -50,6 +49,7 @@ class CreatePlayerVC: UIViewController, UITableViewDataSource, UITableViewDelega
         readyButtonOutlet.layer.borderColor = UIColor(red:0/255, green:255/255, blue:118/255, alpha: 1).cgColor
         readyButtonOutlet.layer.cornerRadius = 10
         readyButtonOutlet.layer.borderWidth = 1.0
+        
     }
     
 }

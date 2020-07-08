@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -313,8 +313,11 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5SD-bB-ldN">
-                                <rect key="frame" x="270" y="681" width="114" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5SD-bB-ldN" customClass="CustomGreenButton" customModule="UltimatePartyGame" customModuleProvider="target">
+                                <rect key="frame" x="254" y="681" width="130" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="JYl-Bg-RAV"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
                                 <state key="normal" title="COMPLETE">
                                     <color key="titleColor" red="0.0" green="1" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -323,8 +326,11 @@
                                     <action selector="completeButtonPressed:" destination="DxV-g0-CVo" eventType="touchUpInside" id="e02-jt-jOe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ria-3c-srk">
-                                <rect key="frame" x="30" y="681" width="39" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ria-3c-srk" customClass="CustomGreenButton" customModule="UltimatePartyGame" customModuleProvider="target">
+                                <rect key="frame" x="30" y="681" width="75" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="r15-24-X3O"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
                                 <state key="normal" title="GO">
                                     <color key="titleColor" red="0.0" green="1" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -337,14 +343,14 @@
                         <color key="backgroundColor" red="0.2666666667" green="0.20784313730000001" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="W9x-I7-f9H" firstAttribute="top" secondItem="Ebt-5H-yW0" secondAttribute="top" constant="142" id="1D0-tU-FHH"/>
-                            <constraint firstItem="ria-3c-srk" firstAttribute="leading" secondItem="Ebt-5H-yW0" secondAttribute="leading" constant="30" id="LZG-8L-SVr"/>
-                            <constraint firstItem="Ebt-5H-yW0" firstAttribute="bottom" secondItem="5SD-bB-ldN" secondAttribute="bottom" constant="52" id="RF6-vr-SWA"/>
-                            <constraint firstItem="Ebt-5H-yW0" firstAttribute="bottom" secondItem="ria-3c-srk" secondAttribute="bottom" constant="52" id="UCC-X0-Lg4"/>
+                            <constraint firstItem="Ebt-5H-yW0" firstAttribute="bottom" secondItem="ria-3c-srk" secondAttribute="bottom" constant="52" id="9Kc-iV-KOu"/>
+                            <constraint firstItem="ria-3c-srk" firstAttribute="leading" secondItem="Ebt-5H-yW0" secondAttribute="leading" constant="30" id="CkS-Yg-tjn"/>
                             <constraint firstItem="W9x-I7-f9H" firstAttribute="leading" secondItem="Ebt-5H-yW0" secondAttribute="leading" constant="162" id="mjk-s4-0PE"/>
                             <constraint firstItem="W9x-I7-f9H" firstAttribute="centerX" secondItem="Cfv-Ta-gsK" secondAttribute="centerX" id="q0y-gL-Vhi"/>
                             <constraint firstItem="t6p-HE-WjB" firstAttribute="centerY" secondItem="Cfv-Ta-gsK" secondAttribute="centerY" id="qk1-oS-070"/>
+                            <constraint firstItem="Ebt-5H-yW0" firstAttribute="bottom" secondItem="5SD-bB-ldN" secondAttribute="bottom" constant="52" id="vHg-tp-quc"/>
+                            <constraint firstItem="Ebt-5H-yW0" firstAttribute="trailing" secondItem="5SD-bB-ldN" secondAttribute="trailing" constant="30" id="vVI-Xi-rqD"/>
                             <constraint firstItem="t6p-HE-WjB" firstAttribute="centerX" secondItem="Cfv-Ta-gsK" secondAttribute="centerX" id="xGk-Rz-jZH"/>
-                            <constraint firstItem="Ebt-5H-yW0" firstAttribute="trailing" secondItem="5SD-bB-ldN" secondAttribute="trailing" constant="30" id="zgu-U3-Ctf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ebt-5H-yW0"/>
                     </view>
@@ -389,11 +395,11 @@
             <point key="canvasLocation" x="4021.739130434783" y="101.78571428571428"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="info.circle" catalog="system" width="64" height="60"/>
-        <image name="person.crop.circle.fill.badge.plus" catalog="system" width="64" height="50"/>
-    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ljc-0J-a5S"/>
+        <segue reference="9M7-8f-pYq"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="person.crop.circle.fill.badge.plus" catalog="system" width="128" height="101"/>
+    </resources>
 </document>

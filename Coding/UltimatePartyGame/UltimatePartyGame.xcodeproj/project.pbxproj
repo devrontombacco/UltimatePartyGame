@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		002B7BA8249501F0001C59A3 /* playerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002B7BA7249501F0001C59A3 /* playerTableView.swift */; };
+		004BFF6C24B4F8FC00234E3E /* CustomGreenUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BFF6B24B4F8FC00234E3E /* CustomGreenUIButton.swift */; };
 		0087745B246D918E0022EADF /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0087745A246D918E0022EADF /* InfoVC.swift */; };
 		0087745D246D91C10022EADF /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0087745C246D91C10022EADF /* GameVC.swift */; };
 		00A1F112246D8C8B0056D7EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A1F111246D8C8B0056D7EF /* AppDelegate.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		002B7BA7249501F0001C59A3 /* playerTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playerTableView.swift; sourceTree = "<group>"; };
+		004BFF6B24B4F8FC00234E3E /* CustomGreenUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGreenUIButton.swift; sourceTree = "<group>"; };
 		0087745A246D918E0022EADF /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
 		0087745C246D91C10022EADF /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		00A1F10E246D8C8B0056D7EF /* UltimatePartyGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimatePartyGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				002B7BA7249501F0001C59A3 /* playerTableView.swift */,
+				004BFF6B24B4F8FC00234E3E /* CustomGreenUIButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00A1F116246D8C8B0056D7EF /* SplashScreenVC.swift in Sources */,
+				004BFF6C24B4F8FC00234E3E /* CustomGreenUIButton.swift in Sources */,
 				00A1F129246D91220056D7EF /* CreatePlayerVC.swift in Sources */,
 				00A1F112246D8C8B0056D7EF /* AppDelegate.swift in Sources */,
 				00FD36FA2496802100A9061A /* RandomTasks.swift in Sources */,
