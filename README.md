@@ -19,10 +19,6 @@ Despite being a small project, I trained myself to make apps using a User Experi
 * Mockups: I then needed to add the color scheme and decided on a UI for the app, resulting in its design
 * Build: I went ahead and built the app.
 
-
-And of course Dillinger itself is open source with a [public repository][dill]
- on GitHub.
-
 ### Setup
 To run this project, just clone it to your desktop and run it in Xcode. Any feedback is welcome! 
 
